@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            .test {
+                background: red;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 32px 25px;
+
+                > * {
+                    /* width: calc(50% - (25px * 1 / 2)); */
+                    width: 200px;
+                    background: blueviolet;
+                    flex-grow: 1;
+                }
+            }
+
+            .post {
+                height: 200px;
+            }
+            /* .test {
+                background: red;
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+                gap: 32px 25px;
+            } */
+
+            /* .post {
+                height: 200px;
+                background: blueviolet;
+            } */
+        </style>
+    </head>
+    <body>
+        <section class="test">
+            <article class="post">post</article>
+            <article class="post">post</article>
+            <article class="post">post</article>
+            <article class="post">post</article>
+            <article class="post">post</article>
+            <article class="post">post</article>
+            <article class="post">post</article>
+            <article class="post">post</article>
+        </section>
+    </body>
+</html>

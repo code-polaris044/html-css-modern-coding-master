@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Boards</title>
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap"
+            rel="stylesheet" />
+
+        <link
+            href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+            integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+            crossorigin="anonymous"
+            rel="stylesheet" />
+
+        <link href="parts.css" rel="stylesheet" />
+
+        <style>
+            /* .footer-sns a {
+                width: 36px;
+                aspect-ratio: 1 / 1;
+                height: 36px;
+                clip-path: circle(50%);
+            } */
+
+            .balloon {
+                position: relative;
+                width: 200px;
+                height: 100px;
+                background-color: #4891bd;
+                color: white;
+                padding: 10px;
+                border-radius: 5px;
+            }
+
+            .balloon::before {
+                content: "";
+                position: absolute;
+                top: calc(50% - 10px);
+                left: -20px;
+                width: 0;
+                height: 0;
+                background-color: #4891bd;
+                width: 50px;
+                height: 50px;
+                clip-path: polygon(0 10px, 20px 0, 20px 20px);
+                z-index: 1;
+            }
+        </style>
+    </head>
+    <body style="padding: 40px">
+        <!-- <ul class="footer-sns">
+            <li>
+                <a href="#">
+                    <i class="fab fa-twitter"></i>
+                    <span class="sr-only">Twitter</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                    <span class="sr-only">Facebook</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fab fa-instagram"></i>
+                    <span class="sr-only">Instagram</span>
+                </a>
+            </li>
+        </ul> -->
+        <div class="balloon">こんにちは</div>
+    </body>
+</html>
